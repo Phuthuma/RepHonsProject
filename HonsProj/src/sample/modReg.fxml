@@ -11,6 +11,7 @@
 <?import org.tbee.javafx.scene.layout.fxml.MigPane?>
 
 <?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Label?>
 <MigPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ModRegCont">
    <children>
       <MigPane prefHeight="800.0" prefWidth="800.0">
@@ -25,8 +26,8 @@
                                  <children>
                                     <JFXListView fx:id="lstMods" prefHeight="600.0" prefWidth="400.0" MigPane.cc="wrap" />
                                     <MigPane layout="fill, wrap2" prefHeight="40.0" prefWidth="400.0">
-                                       <JFXButton buttonType="RAISED" mnemonicParsing="false" style="-fx-background-color: #82e0aa;" text="New Module" MigPane.cc="dock west" />
-                                       <JFXButton buttonType="RAISED" mnemonicParsing="false" style="-fx-background-color: e36953;" text="Delete Module" MigPane.cc="dock east" />
+                                       <JFXButton fx:id="btnNewMod" buttonType="RAISED" mnemonicParsing="false" style="-fx-background-color: #82e0aa;" text="New Module" MigPane.cc="dock west" />
+                                       <JFXButton fx:id="btnDelMod" buttonType="RAISED" mnemonicParsing="false" style="-fx-background-color: e36953;" text="Delete Module" MigPane.cc="dock east" />
                                     </MigPane>
                                  </children>
                               </MigPane>
@@ -34,17 +35,18 @@
                                  <children>
                                     <TitledPane animated="false" text="Edit Module" MigPane.cc="span, grow">
                                        <content>
-                                          <MigPane layout="wrap1, fillx" prefHeight="200.0" prefWidth="200.0">
+                                          <MigPane layout="fillx" prefHeight="200.0" prefWidth="200.0">
                                              <children>
-                                                <JFXTextField fx:id="txtModCode" editable="false" labelFloat="true" promptText="Module Code" MigPane.cc="spanx, growx, gapy unrelated">
+                                                <JFXTextField fx:id="txtModCode" editable="false" labelFloat="true" promptText="Module Code" MigPane.cc="spanx, growx, gapy unrelated, wrap">
                                                    <font>
                                                       <Font size="16.0" />
                                                    </font></JFXTextField>
-                                                <JFXTextField fx:id="txtModName" labelFloat="true" promptText="Module Name" MigPane.cc="spanx, growx, gapy unrelated">
+                                                <JFXTextField fx:id="txtModName" labelFloat="true" promptText="Module Name" MigPane.cc="spanx, growx, gapy unrelated, wrap">
                                                    <font>
                                                       <Font size="16.0" />
                                                    </font></JFXTextField>
-                                                <Spinner fx:id="spnModLev" ></Spinner>
+                                                <Label text="Module Level:"/>
+                                                <Spinner fx:id="spnModLev" maxWidth="50.0" MigPane.cc="spanx, growx, gapy unrelated, wrap" />
                                                 <JFXButton fx:id="btnSaveMod" buttonType="RAISED" mnemonicParsing="false" style="-fx-background-color: #82e0aa;" text="Save Changes" MigPane.cc="spanx, growx, gapy unrelated" />
                                              </children>
                                           </MigPane>

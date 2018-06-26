@@ -29,6 +29,10 @@ public class Module {
     public StringProperty modNameProperty() {
         return modName;
     }
+    public String getModName() {
+        return modName.get();
+    }
+
     public IntegerProperty modLevelProperty() {
         return modLevel;
     }

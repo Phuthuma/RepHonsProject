@@ -1,23 +1,27 @@
 package sample;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXListView;
 import com.jfoenix.controls.JFXSpinner;
 import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.control.*;
 
-import javax.swing.text.html.ListView;
+
 import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class ModRegCont implements Initializable {
     //variables
+    private int index=0;
+
     private Connection con=null;
     private ArrayList<Module>mods;
     private ObservableList<Module>obsMods;
@@ -29,6 +33,11 @@ public class ModRegCont implements Initializable {
     @FXML private JFXTextField txtLectName;
     @FXML private JFXTextField txtLectEmail;
     @FXML private Spinner<Integer> spnModLev;
+    @FXML private JFXButton btnNewMod;
+    @FXML private JFXButton btnDelMod;
+    @FXML private JFXButton btnSaveMod;
+    @FXML private JFXButton btnSaveLect;
+
 
     //methods
     @Override
@@ -38,8 +47,11 @@ public class ModRegCont implements Initializable {
         obsMods.addAll(mods);
         setUpMods();
 
-
         lstMods.setItems(obsMods);
+        lstMods.getSelectionModel().selectedIndexProperty().addListener((observable, oldValue, newValue) -> {
+            if(newValue.intValue()>=0)
+                index=newValue.intValue();
+        });
         lstMods.getSelectionModel().selectedItemProperty().addListener(((observable, oldValue, newValue) -> {
             if(oldValue!=null){
                 txtModCode.textProperty().unbindBidirectional(oldValue.modCodeProperty());
@@ -94,6 +106,58 @@ public class ModRegCont implements Initializable {
                 disconnect();
             }
         }));
+        btnSaveMod.setOnAction(event -> {
+            connect();
+            try {
+                String sql="update Module set ModName = ?, ModLevel = ? where ModCode = ?";
+                PreparedStatement stmt=con.prepareStatement(sql);
+                stmt.setString(1,txtModName.getText());
+                stmt.setInt(2,spnModLev.getValue());
+                stmt.setString(3,txtModCode.getText());
+                stmt.executeUpdate();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            disconnect();
+            refreshSelectedListItem();
+        });
+        btnSaveLect.setOnAction(event -> {
+            connect();
+            String sql="Update Lecturer set Name = ?, Email = ? where LectCode = ?";
+            try {
+                PreparedStatement stmt=con.prepareStatement(sql);
+                stmt.setString(1,txtLectName.getText());
+                stmt.setString(2,txtLectEmail.getText());
+                stmt.setString(3,txtLectCode.getText());
+                stmt.executeUpdate();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            disconnect();
+        });
+        btnDelMod.setOnAction(event -> {
+            Alert delAlert=new Alert(Alert.AlertType.CONFIRMATION);
+            delAlert.setTitle("Module Delete");
+            delAlert.setContentText("Are you sure you want to delete "+txtModName.textProperty().get()+" ?");
+            Optional<ButtonType>result=delAlert.showAndWait();
+            if(result.get()==ButtonType.OK){
+                connect();
+                String sql="Delete from Module where ModCode = ?";
+                try {
+                    PreparedStatement stmt=con.prepareStatement(sql);
+                    stmt.setString(1,txtModCode.getText());
+                    stmt.executeUpdate();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+                disconnect();
+                obsMods.remove(lstMods.getSelectionModel().getSelectedItem());
+            }else{
+                delAlert.close();
+            }
+
+
+        });
 
         lstMods.getSelectionModel().selectFirst();
     }
@@ -120,6 +184,24 @@ public class ModRegCont implements Initializable {
             e.printStackTrace();
         }
         disconnect();
+    }
+    private void refreshSelectedListItem() {
+        int index = lstMods.getSelectionModel().getSelectedIndex();
+
+        if (index >= 0) {
+
+            lstMods.fireEvent(
+                    new ListView.EditEvent<>(
+                            lstMods,
+                            ListView.editCommitEvent(),
+                            obsMods.get(index),
+                            index
+                    )
+            );
+
+            // unfortunately, the event loses the currently selected item, so reselect it
+            lstMods.getSelectionModel().select(index);
+        }
     }
     private void connect(){
         try {
