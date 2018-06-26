@@ -6,6 +6,7 @@
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
       <jdbc-url>jdbc:sqlserver://postgrad.nmmu.ac.za;database=SolAssist</jdbc-url>
+      <default-dialect>TSQL</default-dialect>
       <driver-properties>
         <property name="applicationName" value="DataGrip" />
       </driver-properties>
