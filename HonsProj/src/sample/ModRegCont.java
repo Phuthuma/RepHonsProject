@@ -8,10 +8,18 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
@@ -135,6 +143,29 @@ public class ModRegCont implements Initializable {
             }
             disconnect();
         });
+
+        btnNewMod.setOnAction(event -> {
+            Parent addRoot = null;
+            try {
+                addRoot=FXMLLoader.load(getClass().getResource("newModule.fxml"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Scene newScene=new Scene(addRoot);
+            Stage primeStage= (Stage) ((Node)event.getSource()).getScene().getWindow();
+            Stage stage=new Stage();
+            stage.initOwner(primeStage);
+            stage.setScene(newScene);
+            stage.setTitle("New Module");
+            stage.setResizable(false);
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.UTILITY);
+            stage.setWidth(400.0);
+            stage.setHeight(400.0);
+            stage.showAndWait();
+            obsMods.clear();
+            setUpMods();
+        });
         btnDelMod.setOnAction(event -> {
             Alert delAlert=new Alert(Alert.AlertType.CONFIRMATION);
             delAlert.setTitle("Module Delete");
@@ -228,4 +259,7 @@ public class ModRegCont implements Initializable {
         }
     }
 
+    public ObservableList<Module> getObsMods() {
+        return obsMods;
+    }
 }
