@@ -15,8 +15,8 @@
         <JFXTextField fx:id="txtEmail" labelFloat="true" promptText="Enter Lecturer Email" MigPane.cc="spanx,growx,wrap" />
         <JFXPasswordField fx:id="passOne" labelFloat="true" promptText="Enter Password" MigPane.cc="spanx,growx,wrap" />
         <MigPane layout="fill, wrap2" prefHeight="40.0" prefWidth="300.0" MigPane.cc="spanx,growx">
-            <JFXButton fx:id="btnSaveMod" buttonType="RAISED" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #aed6f1;" text="Save" MigPane.cc="dock west" />
-            <JFXButton fx:id="btnCancelMod" buttonType="RAISED" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #aed6f1;" text="Cancel" MigPane.cc="dock east" />
+            <JFXButton fx:id="btnSaveLect" buttonType="RAISED" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #aed6f1;" text="Save" MigPane.cc="dock west" />
+            <JFXButton fx:id="btnCancelLect" buttonType="RAISED" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #aed6f1;" text="Cancel" MigPane.cc="dock east" />
         </MigPane>
     </children>
 </MigPane>

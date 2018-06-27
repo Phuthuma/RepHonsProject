@@ -80,8 +80,9 @@ public class newModuleController implements Initializable {
             stage.setWidth(400.0);
             stage.setHeight(400.0);
             stage.showAndWait();
+            obsLectCodes.clear();
+            setUpLectCodes();
         });
-
         btnSaveMod.setOnAction(event -> {
             connect();
             String sql="select ModCode from Module where ModCode = ?";
@@ -118,7 +119,6 @@ public class newModuleController implements Initializable {
             Stage stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
             stage.close();
         });
-
     }
 
     private void connect(){
