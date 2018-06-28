@@ -82,10 +82,10 @@ public class newLectCont implements Initializable {
             email.setHostName("smtp.gmail.com");
             email.setSmtpPort(465);
             email.setSSLOnConnect(true);
-            email.setAuthentication("phuthumaloyisopetse@gmail.com","sweleba88");
+            email.setAuthentication(","");
 
             try {
-                email.setFrom("phuthumaloyisopetse@gmail.com");
+                email.setFrom("");
             } catch (EmailException e) {
                 e.printStackTrace();
             }
@@ -123,10 +123,10 @@ public class newLectCont implements Initializable {
             e.printStackTrace();
         }
         if(true){
-            String connectionString="jdbc:sqlserver://postgrad.nmmu.ac.za;database=SolAssist";
+            String connectionString="";
 
             try {
-                con=DriverManager.getConnection(connectionString,"solassistuser","Dfjf8d02fdjjJ");
+                con=DriverManager.getConnection(connectionString);
 
             } catch (SQLException e) {
                 e.printStackTrace();
