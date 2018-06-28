@@ -7,7 +7,7 @@
 <?import javafx.scene.control.Spinner?>
 <?import org.tbee.javafx.scene.layout.fxml.MigPane?>
 
-<MigPane layout="fill" maxHeight="-Infinity" maxWidth="400.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.newModuleController">
+<MigPane layout="fill" maxHeight="-Infinity" maxWidth="400.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.newModuleCont">
    <children>
        <JFXTextField fx:id="txtCode" labelFloat="true" promptText="Enter Module Code" MigPane.cc="spanx,growx,wrap" />
        <JFXTextField fx:id="txtName" labelFloat="true" promptText="Enter Module Name" MigPane.cc="spanx,growx,wrap" />

@@ -22,7 +22,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class newModuleController implements Initializable {
+public class newModuleCont implements Initializable {
     //variables
     private Connection con=null;
 
@@ -128,9 +128,9 @@ public class newModuleController implements Initializable {
             e.printStackTrace();
         }
         if(true){
-            String connectionString="jdbc:sqlserver://postgrad.nmmu.ac.za;database=SolAssist";
+            String connectionString="";
             try {
-                con=DriverManager.getConnection(connectionString,"solassistuser","Dfjf8d02fdjjJ");
+                con=DriverManager.getConnection(connectionString);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
