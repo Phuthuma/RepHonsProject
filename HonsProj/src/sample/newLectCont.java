@@ -4,18 +4,17 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.validation.RequiredFieldValidator;
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.HtmlEmail;
 
 import java.net.URL;
 import java.sql.*;
-import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -91,29 +90,20 @@ public class newLectCont implements Initializable {
                         stmt.execute();
 
                         HtmlEmail email=new HtmlEmail();
-                        email.setHostName("smtp.gmail.com");
-                        email.setSmtpPort(465);
-                        email.setSSLOnConnect(true);
-                        email.setAuthentication("phuthumaloyisopetse@gmail.com","sweleba88");
+                        try {
+                            email.setHostName("smtp.gmail.com");
+                            email.setSmtpPort(587);
+                            email.setStartTLSEnabled(true);
+                            email.setAuthentication("phuthumaloyisopetse@gmail.com","sweleba88");
 
-                        try {
                             email.setFrom("phuthumaloyisopetse@gmail.com");
-                        } catch (EmailException e) {
-                            e.printStackTrace();
-                        }
-                        try {
                             email.addTo(txtEmail.getText());
-                        } catch (EmailException e) {
-                            e.printStackTrace();
-                        }
-                        email.setSubject("SolAssist log in credentials");
-                        try {
-                            email.setHtmlMsg("Hi"+txtName.getText()+" an account has been created in solAssist for username: "+txtCode.getText()+" Password: "+passOne.getText());
-                        } catch (EmailException e) {
-                            e.printStackTrace();
-                        }
-                        try {
+                            email.setSubject("SollAssist Credentials");
+                            email.setHtmlMsg("Hi "+txtName.getText()+" an account has been created in solAssist for " +
+                                    "username:"+txtCode.getText()+" password: "+ passOne.getText());
+
                             email.send();
+
                         } catch (EmailException e) {
                             e.printStackTrace();
                         }
@@ -133,40 +123,7 @@ public class newLectCont implements Initializable {
             }
             disconnect();
 
-<<<<<<< HEAD
-=======
-            HtmlEmail email=new HtmlEmail();
-            email.setHostName("smtp.gmail.com");
-            email.setSmtpPort(465);
-            email.setSSLOnConnect(true);
-            email.setAuthentication(","");
 
-            try {
-                email.setFrom("");
-            } catch (EmailException e) {
-                e.printStackTrace();
-            }
-            try {
-                email.addTo(txtEmail.getText());
-            } catch (EmailException e) {
-                e.printStackTrace();
-            }
-            email.setSubject("SolAssist log in credentials");
-            try {
-                email.setHtmlMsg("Hi Phuthuma an account has been created in solAssist for username: "+txtCode.getText()+" Password: "+passOne.getText());
-            } catch (EmailException e) {
-                e.printStackTrace();
-            }
-            try {
-                email.send();
-            } catch (EmailException e) {
-                e.printStackTrace();
-            }
-
-            Stage stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
-            stage.close();
-
->>>>>>> 041896c3bc7da2edf6a0efd6b66b9999eeb3889d
         });
         btnCancelLect.setOnAction(event -> {
             Stage stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -188,10 +145,10 @@ public class newLectCont implements Initializable {
             e.printStackTrace();
         }
         if(true){
-            String connectionString="";
+            String connectionString="jdbc:sqlserver://postgrad.nmmu.ac.za;database=SolAssist";
 
             try {
-                con=DriverManager.getConnection(connectionString);
+                con=DriverManager.getConnection(connectionString,"solassistuser","Dfjf8d02fdjjJ");
 
             } catch (SQLException e) {
                 e.printStackTrace();

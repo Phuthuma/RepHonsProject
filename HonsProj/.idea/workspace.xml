@@ -76,31 +76,20 @@
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+              <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forgotPass.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/forgotPass.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+      <file leaf-file-name="logInCont.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/logInCont.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="76" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forgotPassCont.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/forgotPassCont.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="561">
+              <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#validEmail#0;class#forgotPassCont#0" />
-                <element signature="method#connect#0;class#forgotPassCont#0" />
-                <element signature="method#disconnect#0;class#forgotPassCont#0" />
+                <element signature="e#1480#2265#0" />
+                <element signature="method#setValidations#0;class#logInCont#0" />
               </folding>
             </state>
           </provider>
@@ -140,20 +129,22 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4075069a-44d2-44d5-a932-871b5c1052f8/console_1.sql" />
         <option value="$PROJECT_DIR$/src/sample/Module.java" />
         <option value="$PROJECT_DIR$/src/sample/newModule.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/ModRegCont.java" />
         <option value="$PROJECT_DIR$/src/sample/newLect.fxml" />
         <option value="$PROJECT_DIR$/src/sample/newModuleController.java" />
         <option value="$PROJECT_DIR$/src/sample/modReg.fxml" />
         <option value="$PROJECT_DIR$/src/sample/logInController.java" />
         <option value="$PROJECT_DIR$/src/sample/signUp.fxml" />
         <option value="$PROJECT_DIR$/src/sample/logIn.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/logInCont.java" />
         <option value="$PROJECT_DIR$/src/sample/forgotPass.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/signUpCont.java" />
         <option value="$PROJECT_DIR$/src/sample/forgotPassCont.java" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/mailExeption.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4075069a-44d2-44d5-a932-871b5c1052f8/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/newLectCont.java" />
+        <option value="$PROJECT_DIR$/src/sample/ModRegCont.java" />
+        <option value="$PROJECT_DIR$/src/sample/newModuleCont.java" />
+        <option value="$PROJECT_DIR$/src/sample/signUpCont.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/logInCont.java" />
       </list>
     </option>
   </component>
@@ -181,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -206,6 +196,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,7 +213,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect" value="TSQL&#10;MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Jarfiles/spring-context-support-5.0.7.RELEASE.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -357,16 +348,16 @@
       <workItem from="1530003797673" duration="31458000" />
       <workItem from="1530086497091" duration="12017000" />
       <workItem from="1530099878469" duration="9902000" />
-      <workItem from="1530178304800" duration="26689000" />
+      <workItem from="1530178304800" duration="27292000" />
+      <workItem from="1530261011082" duration="10087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137501000" />
+    <option name="totallyTimeSpent" value="148191000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -377,20 +368,20 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40843508" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40843508" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32963374" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.12100213" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1119403" />
       <window_info anchor="right" id="Database" order="3" weight="0.3251599" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="JetGradle" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -416,7 +407,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/forgotPassCont.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -424,6 +423,19 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/sample/forgotPassCont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#validEmail#0;class#forgotPassCont#0" />
+            <element signature="method#connect#0;class#forgotPassCont#0" />
+            <element signature="method#disconnect#0;class#forgotPassCont#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/newModuleCont.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
@@ -447,6 +459,10 @@
           <caret line="229" selection-start-line="229" selection-end-line="229" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1764#1893#0" />
+            <element signature="e#1968#4913#0" />
+            <element signature="e#4948#5525#0" />
+            <element signature="e#5560#6098#0" />
             <element signature="e#7009#7931#0" />
             <element signature="method#setUpMods#0;class#ModRegCont#0" />
             <element signature="method#refreshSelectedListItem#0;class#ModRegCont#0" />
@@ -500,6 +516,10 @@
           <caret line="69" column="64" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1764#1893#0" />
+            <element signature="e#1968#4913#0" />
+            <element signature="e#4948#5525#0" />
+            <element signature="e#5560#6098#0" />
             <element signature="e#7009#7931#0" />
             <element signature="method#setUpMods#0;class#ModRegCont#0" />
             <element signature="method#refreshSelectedListItem#0;class#ModRegCont#0" />
@@ -522,6 +542,10 @@
           <caret line="69" column="64" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1764#1893#0" />
+            <element signature="e#1968#4913#0" />
+            <element signature="e#4948#5525#0" />
+            <element signature="e#5560#6098#0" />
             <element signature="e#7009#7931#0" />
             <element signature="method#setUpMods#0;class#ModRegCont#0" />
             <element signature="method#refreshSelectedListItem#0;class#ModRegCont#0" />
@@ -544,6 +568,10 @@
           <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1764#1893#0" />
+            <element signature="e#1968#4913#0" />
+            <element signature="e#4948#5525#0" />
+            <element signature="e#5560#6098#0" />
             <element signature="e#7009#7931#0" />
             <element signature="method#setUpMods#0;class#ModRegCont#0" />
             <element signature="method#refreshSelectedListItem#0;class#ModRegCont#0" />
@@ -694,7 +722,7 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="86.0" y="144.0" />
           <SelectedNodes />
           <Categories>
-            <Category />
+            <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
           <SCOPE>All</SCOPE>
@@ -714,67 +742,10 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="83.0" y="60.0" />
           <SelectedNodes />
           <Categories>
-            <Category />
+            <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
           <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/newModuleCont.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1446#1555#0" />
-            <element signature="e#1605#1781#0" />
-            <element signature="e#2866#4276#0" />
-            <element signature="e#4312#4442#0" />
-            <element signature="method#connect#0;class#newModuleController#0" />
-            <element signature="method#disconnect#0;class#newModuleController#0" />
-            <element signature="method#setUpLectCodes#0;class#newModuleController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ModRegCont.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="166" column="24" lean-forward="true" selection-start-line="166" selection-start-column="24" selection-end-line="166" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1764#1893#0" />
-            <element signature="e#1968#4913#0" />
-            <element signature="e#4948#5525#0" />
-            <element signature="e#5560#6098#0" />
-            <element signature="e#7009#7931#0" />
-            <element signature="method#setUpMods#0;class#ModRegCont#0" />
-            <element signature="method#refreshSelectedListItem#0;class#ModRegCont#0" />
-            <element signature="method#connect#0;class#ModRegCont#0" />
-            <element signature="method#disconnect#0;class#ModRegCont#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/logInCont.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#1515#2359#0" />
-            <element signature="method#setValidations#0;class#logInCont#0" />
-            <element signature="e#1003#1107#0" />
-            <element signature="e#1238#1413#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/logIn.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="26" lean-forward="true" selection-end-line="28" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -785,32 +756,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/signUp.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+    <entry file="file://$PROJECT_DIR$/src/sample/mailExeption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/newLect.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4075069a-44d2-44d5-a932-871b5c1052f8/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/forgotPass.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/forgotPassCont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#validEmail#0;class#forgotPassCont#0" />
+            <element signature="method#connect#0;class#forgotPassCont#0" />
+            <element signature="method#disconnect#0;class#forgotPassCont#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/newLectCont.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="121" column="38" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+        <state relative-caret-position="646">
+          <caret line="163" column="5" lean-forward="true" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1156#1264#0" />
-            <element signature="e#1355#1463#0" />
-            <element signature="e#1556#1636#0" />
-            <element signature="e#1750#2189#0" />
-            <element signature="e#4309#4439#0" />
+            <element signature="method#initialize#0;class#newLectCont#0" />
             <element signature="method#validEmail#0;class#newLectCont#0" />
             <element signature="method#connect#0;class#newLectCont#0" />
             <element signature="method#disconnect#0;class#newLectCont#0" />
@@ -818,21 +805,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/signUpCont.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/newModuleCont.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="72" column="16" lean-forward="true" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+        <state relative-caret-position="684">
+          <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initialize#0;class#newModuleCont#0" />
+            <element signature="e#1440#1549#0" />
+            <element signature="e#1599#1775#0" />
+            <element signature="e#2172#2889#0" />
+            <element signature="e#2923#4333#0" />
+            <element signature="e#4369#4499#0" />
+            <element signature="method#connect#0;class#newModuleCont#0" />
+            <element signature="method#disconnect#0;class#newModuleCont#0" />
+            <element signature="method#setUpLectCodes#0;class#newModuleCont#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ModRegCont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="252" column="5" selection-start-line="252" selection-start-column="5" selection-end-line="252" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initialize#0;class#ModRegCont#0" />
+            <element signature="e#1764#1893#0" />
+            <element signature="e#1968#4913#0" />
+            <element signature="e#4948#5525#0" />
+            <element signature="e#5560#6098#0" />
+            <element signature="e#6132#6976#0" />
+            <element signature="e#7009#7931#0" />
+            <element signature="method#setUpMods#0;class#ModRegCont#0" />
+            <element signature="method#refreshSelectedListItem#0;class#ModRegCont#0" />
+            <element signature="method#connect#0;class#ModRegCont#0" />
+            <element signature="method#disconnect#0;class#ModRegCont#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/signUpCont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initialize#0;class#signUpCont#0" />
+            <element signature="e#1186#3550#0" />
+            <element signature="e#3583#3945#0" />
             <element signature="method#setValidators#0;class#signUpCont#0" />
-            <element signature="e#4197#4390#0" />
-            <element signature="e#4439#4628#0" />
-            <element signature="e#4678#4869#0" />
-            <element signature="e#4919#5358#0" />
-            <element signature="e#5409#5602#0" />
-            <element signature="e#5651#5840#0" />
-            <element signature="e#5892#6087#0" />
-            <element signature="e#6139#6604#0" />
+            <element signature="e#4150#4343#0" />
+            <element signature="e#4392#4581#0" />
+            <element signature="e#4631#4822#0" />
+            <element signature="e#4872#5311#0" />
+            <element signature="e#5362#5555#0" />
+            <element signature="e#5604#5793#0" />
+            <element signature="e#5845#6040#0" />
+            <element signature="e#6092#6557#0" />
             <element signature="method#validEmail#0;class#signUpCont#0" />
             <element signature="method#connect#0;class#signUpCont#0" />
             <element signature="method#disconnect#0;class#signUpCont#0" />
@@ -840,34 +870,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/newLect.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/forgotPass.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/sample/logInCont.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="76" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/forgotPassCont.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="561">
+          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#validEmail#0;class#forgotPassCont#0" />
-            <element signature="method#connect#0;class#forgotPassCont#0" />
-            <element signature="method#disconnect#0;class#forgotPassCont#0" />
+            <element signature="e#1480#2265#0" />
+            <element signature="method#setValidations#0;class#logInCont#0" />
           </folding>
         </state>
       </provider>
@@ -889,7 +906,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

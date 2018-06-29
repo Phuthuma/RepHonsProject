@@ -91,7 +91,6 @@ public class signUpCont implements Initializable {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            Scene newScene=new Scene(addRoot);
             Stage primeStage= (Stage) ((Node)event.getSource()).getScene().getWindow();
             primeStage.close();
         });

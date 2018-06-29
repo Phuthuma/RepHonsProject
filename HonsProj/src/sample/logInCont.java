@@ -65,10 +65,26 @@ public class logInCont implements Initializable {
             stage.showAndWait();
         });
         lblForgot.setOnAction(event -> {
-
+            Parent addRoot = null;
+            try {
+                addRoot=FXMLLoader.load(getClass().getResource("forgotPass.fxml"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Scene newScene=new Scene(addRoot);
+            Stage primeStage= (Stage) ((Node)event.getSource()).getScene().getWindow();
+            Stage stage=new Stage();
+            stage.initOwner(primeStage);
+            stage.setScene(newScene);
+            stage.setTitle("Password Recovery");
+            stage.setResizable(false);
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.DECORATED);
+            stage.setWidth(750.0);
+            stage.setHeight(750.0);
+            stage.showAndWait();
         });
     }
-
     private void setValidations(){
         RequiredFieldValidator val=new RequiredFieldValidator();
         val.setMessage("Required Field");
