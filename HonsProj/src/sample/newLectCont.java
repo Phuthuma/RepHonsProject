@@ -90,6 +90,7 @@ public class newLectCont implements Initializable {
                         stmt.execute();
 
                         HtmlEmail email=new HtmlEmail();
+<<<<<<< HEAD
                         try {
                             email.setHostName("smtp.gmail.com");
                             email.setSmtpPort(587);
@@ -97,6 +98,19 @@ public class newLectCont implements Initializable {
                             email.setAuthentication("phuthumaloyisopetse@gmail.com","sweleba88");
 
                             email.setFrom("phuthumaloyisopetse@gmail.com");
+=======
+                        email.setHostName("smtp.gmail.com");
+                        email.setSmtpPort(465);
+                        email.setSSLOnConnect(true);
+                        email.setAuthentication("");
+
+                        try {
+                            email.setFrom("");
+                        } catch (EmailException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+>>>>>>> 1122d2ac316fd6072e676cc26c5364a515f6b1f9
                             email.addTo(txtEmail.getText());
                             email.setSubject("SollAssist Credentials");
                             email.setHtmlMsg("Hi "+txtName.getText()+" an account has been created in solAssist for " +
